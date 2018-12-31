@@ -9,7 +9,7 @@ import configparser
 
 
 #config file to read from
-config = ConfigParser.RawConfigParser()
+config = configparser.RawConfigParser()
 config.readfp(open(r'./configuration.txt'))
 #===========================================
 #name of the experiment!!
