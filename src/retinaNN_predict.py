@@ -8,7 +8,7 @@
 
 #Python
 import numpy as np
-import ConfigParser
+import configparser
 from matplotlib import pyplot as plt
 #Keras
 from keras.models import model_from_json
@@ -37,7 +37,7 @@ from pre_processing import my_PreProc
 
 
 #========= CONFIG FILE TO READ FROM =======
-config = ConfigParser.RawConfigParser()
+config = configparser.RawConfigParser()
 config.read('configuration.txt')
 #===========================================
 #run the training on invariant or local

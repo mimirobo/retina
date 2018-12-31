@@ -9,7 +9,7 @@
 
 
 import numpy as np
-import ConfigParser
+import configparser
 
 from keras.models import Model
 from keras.layers import Input, concatenate, Conv2D, MaxPooling2D, UpSampling2D, Reshape, core, Dropout
@@ -132,7 +132,7 @@ def get_gnet(n_ch,patch_height,patch_width):
     return model
 
 #========= Load settings from Config file
-config = ConfigParser.RawConfigParser()
+config = configparser.RawConfigParser()
 config.read('configuration.txt')
 #patch to the datasets
 path_data = config.get('data paths', 'path_local')
