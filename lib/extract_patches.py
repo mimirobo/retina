@@ -1,6 +1,6 @@
 import numpy as np
 import random
-import ConfigParser
+import configparser
 
 from help_functions import load_hdf5
 from help_functions import visualize
