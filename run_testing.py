@@ -5,7 +5,7 @@
 ##################################################
 
 import os, sys
-import ConfigParser
+import Configparser
 
 
 #config file to read from
